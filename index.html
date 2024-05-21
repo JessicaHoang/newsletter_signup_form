@@ -1,0 +1,64 @@
+<!-- 
+GitHub CoPilot for Beginners: Write Software With AI course
+Cumulative Activity: creating a Newsletter signup form using HTML
+and JavaScript using GitHub CoPilot
+
+Author: Jessica Hoang
+-->
+<!-- create a basic HTML doc -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- add working bootstrap cdn version 5.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <title>Newsletter Signup Form</title>
+    <!-- add working bootstrap javascript bundle from jsdeliver version 5.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="container">
+            <h1>Newsletter Signup Form</h1>
+            <p>Subscribe to our newsletter to get the latest updates</p>
+            <form action="signup.php" method="post">
+                <!-- form fields -->
+                <form action="signup.php" method="post">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="interest">Interest:</label>
+                                <select class="form-control" id="interest" name="interest">
+                                    <option value="">Choose...</option>
+                                    <option value="Technology">Technology</option>
+                                    <option value="Health">Health</option>
+                                    <option value="Sport">Sport</option>
+                                    <option value="Beauty">Beauty</option>
+                                    <option value="Local">Local</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary" id="signup">Sign up</button>
+                    </div>
+                </form>
+            </form>
+        </div>
+    </div>
+    <!-- import index.js -->
+    <script src="index.js"></script>
+  </body>
+</html>
